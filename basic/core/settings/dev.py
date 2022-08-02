@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-@!u!t(b1t@c@*ot8w@j9vxx)$-vr!kdnk@y@c9p0)3ly06!c4d
 DEBUG = False # keep it false, so it won't give internal exceptions of django
 
 ALLOWED_HOSTS = [
-    "localhost"
+    "localhost",
 ]
 
 # Database
@@ -18,7 +18,7 @@ ALLOWED_HOSTS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR.parent / 'db.sqlite3',
     }
 }
 
